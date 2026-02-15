@@ -15,15 +15,19 @@ public class Pokemon {
 	
 // ---------- CONSTRUCTOR ----------------    
     
-	public Pokemon(String nombre, String tipo, int vidaMax, int ataque, List<Movimiento> movimientos, boolean estaVivo) {
-	    this.nombre = nombre;
-	    this.tipo = tipo;
-	    this.vidaMax = vidaMax;
-	    this.vidaActual= vidaMax;
-	    this.ataque = ataque;
-	    this.movimientos = new ArrayList<>();
-	    this.estaVivo = true;
-	}
+    public Pokemon(String nombre, String tipo, int vidaMax, int ataque, List<Movimiento> movimientos, boolean estaVivo) {
+        this.nombre = nombre;
+        this.tipo = tipo;
+        this.vidaMax = vidaMax;
+        this.vidaActual = vidaMax;
+        this.ataque = ataque;
+        if (movimientos == null) {
+           this.movimientos = new ArrayList<>();
+        } else {
+           this.movimientos = new ArrayList<>(movimientos);
+        }
+        this.estaVivo = estaVivo;
+    }
 
 // ------------ GETTERS ------------------
 

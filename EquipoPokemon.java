@@ -124,8 +124,8 @@ public class EquipoPokemon {
 
         for (int i = 0; i < 6; i++) {
         	List<Movimiento> todosLosMovs = listaMovimientos.generarMovimientos();
-            int numero = (int) (Math.random() * 100);
-            Pokemon pBase = listaPokemons.get(numero);
+        	int numero = (int) (Math.random() * listaPokemons.size());
+        	Pokemon pBase = listaPokemons.get(numero);
 
             Pokemon pNuevo = new Pokemon(pBase.getNombre(), pBase.getTipo(), 
                                          pBase.getVidaMax(), pBase.getAtaque(), 

@@ -22,25 +22,29 @@ import java.util.List;
 	    	return this.potencia;
 	    }
 	    
+	    public String getTipo() {
+	    	return this.tipo;
+	    }
+	    
 		private List<Movimiento> movs = new ArrayList<>(); 
 
 			public Movimiento() {
 
 	        // --- MOVIMIENTOS LEGENDARIOS / ESPECIALES ---
-	        movs.add(new Movimiento("Distorsión", "Dragón", 150));
-	        movs.add(new Movimiento("Corte Vacío", "Dragón", 100));
+	        movs.add(new Movimiento("Distorsión", "Dragon", 150));
+	        movs.add(new Movimiento("Corte Vacío", "Dragon", 100));
 	        movs.add(new Movimiento("Golpe Umbrío", "Fantasma", 120));
 	        movs.add(new Movimiento("Sentencia", "Normal", 100));
-	        movs.add(new Movimiento("Roar of Time", "Dragón", 150));
+	        movs.add(new Movimiento("Roar of Time", "Dragon", 150));
 	        movs.add(new Movimiento("Ataque Fulgor", "Eléctrico", 130));
 	        movs.add(new Movimiento("Llama Azul", "Fuego", 130));
 	        movs.add(new Movimiento("Pulso Primigenio", "Agua", 110));
 	        movs.add(new Movimiento("Ala Mortífera", "Siniestro", 80));
 	        movs.add(new Movimiento("Espada Suprema", "Acero", 100));
 	        movs.add(new Movimiento("Embate Supremo", "Lucha", 120));
-	        movs.add(new Movimiento("Cañón Dinamax", "Dragón", 100));
+	        movs.add(new Movimiento("Cañón Dinamax", "Dragon", 100));
 	        movs.add(new Movimiento("Viento Aciago", "Fantasma", 60));
-	        movs.add(new Movimiento("Psicocorte", "Psíquico", 70));
+	        movs.add(new Movimiento("Psicocorte", "Psiquico", 70));
 	        movs.add(new Movimiento("Esfera Aural", "Lucha", 80));
 
 	        // --- TIPO FUEGO ---
@@ -67,11 +71,11 @@ import java.util.List;
 	        movs.add(new Movimiento("Latigazo", "Planta", 120));
 
 	        // --- TIPO ELÉCTRICO ---
-	        movs.add(new Movimiento("Rayo", "Eléctrico", 90));
-	        movs.add(new Movimiento("Trueno", "Eléctrico", 110));
-	        movs.add(new Movimiento("Voltio Cruel", "Eléctrico", 90));
-	        movs.add(new Movimiento("Puño Trueno", "Eléctrico", 75));
-	        movs.add(new Movimiento("Chispazo", "Eléctrico", 80));
+	        movs.add(new Movimiento("Rayo", "Electrico", 90));
+	        movs.add(new Movimiento("Trueno", "Electrico", 110));
+	        movs.add(new Movimiento("Voltio Cruel", "Electrico", 90));
+	        movs.add(new Movimiento("Puño Trueno", "Electrico", 75));
+	        movs.add(new Movimiento("Chispazo", "Electrico", 80));
 
 	        // --- TIPO HIELO ---
 	        movs.add(new Movimiento("Rayo Hielo", "Hielo", 90));
@@ -100,10 +104,10 @@ import java.util.List;
 	        movs.add(new Movimiento("Vendaval", "Volador", 110));
 
 	        // --- TIPO PSÍQUICO ---
-	        movs.add(new Movimiento("Psíquico", "Psíquico", 90));
-	        movs.add(new Movimiento("Psicocarga", "Psíquico", 80));
-	        movs.add(new Movimiento("Cabezazo Zen", "Psíquico", 80));
-	        movs.add(new Movimiento("Comer Sueños", "Psíquico", 100));
+	        movs.add(new Movimiento("Psíquico", "Psiquico", 90));
+	        movs.add(new Movimiento("Psicocarga", "Psiquico", 80));
+	        movs.add(new Movimiento("Cabezazo Zen", "Psiquico", 80));
+	        movs.add(new Movimiento("Comer Sueños", "Psiquico", 100));
 
 	        // --- TIPO BICHO ---
 	        movs.add(new Movimiento("Tijera X", "Bicho", 80));
@@ -124,10 +128,10 @@ import java.util.List;
 	        movs.add(new Movimiento("Poltergeist", "Fantasma", 110));
 
 	        // --- TIPO DRAGÓN ---
-	        movs.add(new Movimiento("Garra Dragón", "Dragón", 80));
-	        movs.add(new Movimiento("Cometa Draco", "Dragón", 130));
-	        movs.add(new Movimiento("Carga Dragón", "Dragón", 100));
-	        movs.add(new Movimiento("Pulso Dragón", "Dragón", 85));
+	        movs.add(new Movimiento("Garra Dragón", "Dragon", 80));
+	        movs.add(new Movimiento("Cometa Draco", "Dragon", 130));
+	        movs.add(new Movimiento("Carga Dragón", "Dragon", 100));
+	        movs.add(new Movimiento("Pulso Dragón", "Dragon", 85));
 
 	        // --- TIPO SINIESTRO ---
 	        movs.add(new Movimiento("Pulso Umbrío", "Siniestro", 80));

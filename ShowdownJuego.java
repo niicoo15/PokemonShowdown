@@ -77,7 +77,6 @@ public class ShowdownJuego {
 				if (muertosJugador2.size() < equipoJugador2.size()) {
 
 					activoJugador2 = equipoJugador2.get(pokemonActivo2);
-					System.out.println("El rival envía a " + activoJugador2.getNombre());
 
 				} else {
 					System.out.println("¡HAS GANADO! Maquinon");
@@ -97,7 +96,7 @@ public class ShowdownJuego {
 						if (p.getEstaVivo()) {
 							estado = "VIDA: " + p.getVidaActual();
 						} else {
-							estado = "(MUERTO)";
+							estado = "MUERTO";
 						}
 						System.out.println((i + 1) + ". " + p.getNombre() + " - " + estado);
 					}
@@ -135,7 +134,7 @@ public class ShowdownJuego {
 				combate.realizarAtaque(activoJugador2, activoJugador1, ataqueRival);
 
 				if (!activoJugador1.getEstaVivo()) {
-					System.out.println("\nTu " + activoJugador1.getNombre() + " se ha debilitado");
+					System.out.println("\nTu " + activoJugador1.getNombre() + " se ha debilitado\n");
 					muertosJugador1.add(activoJugador1);
 
 					if (muertosJugador1.size() < equipoJugador1.size()) {
@@ -150,7 +149,7 @@ public class ShowdownJuego {
 								if (p.getEstaVivo()) {
 									estado = "VIDA: " + p.getVidaActual();
 								} else {
-									estado = "(MUERTO)";
+									estado = "MUERTO";
 								}
 								System.out.println((i + 1) + ". " + p.getNombre() + " - " + estado);
 							}
