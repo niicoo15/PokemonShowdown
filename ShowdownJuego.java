@@ -11,7 +11,7 @@ public class ShowdownJuego {
 
 	public static void main(String[] args) {
 
-		// ---------- GENERADORES DE EQUIPOS Y TABLERO -------------
+		// ---------- GENERADOR DE TABLERO Y DE LOS EQUIPOS -------------
 
 		TableroJuego tablero = new TableroJuego();
 		Scanner sc = new Scanner(System.in);

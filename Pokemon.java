@@ -62,6 +62,8 @@ public class Pokemon {
 	    this.movimientos.add(movimientoNuevo);
 	}
 	
+	// ----------- METODO PARA RECIBIR DAÑO --------------
+	
 	public void recibirDaño(int daño) {
 		if (estaVivo) {
 			vidaActual = vidaActual - daño;

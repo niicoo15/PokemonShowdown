@@ -3,16 +3,22 @@ package PokemonShowdown;
 import java.util.ArrayList;
 import java.util.List;
 
+//----------- ATRIBUTOS --------------
+
 		public class Movimiento {
 			private String nombre;
 			private String tipo;
 			private int potencia;
-	    
+	   
+// ---------- CONSTRUCTOR ----------------  
+			
 	    public Movimiento(String nombre, String tipo, int potencia) {
 	    	this.nombre = nombre;
 	    	this.tipo = tipo;
 	    	this.potencia = potencia;
 	    }
+	
+// ------------ GETTERS ------------------
 	    
 	    public String getNombre() {
 	    	return this.nombre;
@@ -163,9 +169,6 @@ import java.util.List;
 	        movs.add(new Movimiento("Venganza", "Normal", 60));
 	        movs.add(new Movimiento("Pisotón", "Normal", 65));
 
-	    }
-			
-		
-			
+	    }		
 	}	
 

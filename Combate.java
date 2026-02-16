@@ -3,12 +3,13 @@ package PokemonShowdown;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import java.io.File;
 import java.util.Map;
+@SuppressWarnings("unchecked")
 
 public class Combate {
     
     private Map<String, Map<String, Double>> tablaTipos;
 
-    public Combate() {
+	public Combate() {
         try {
             ObjectMapper mapper = new ObjectMapper();
             tablaTipos = mapper.readValue(new File("tipos.json"), Map.class);

@@ -4,12 +4,12 @@ import java.util.ArrayList;
 import java.util.List;
  
 public class EquipoPokemon {
+	
 	private List<Pokemon> listaPokemons = new ArrayList<>();
 	
-				// ----------- LISTA DE POKEMONS AÑADIDOS ---------------------
+	// ----------- LISTA DE POKEMONS AÑADIDOS ---------------------
 	
 	public EquipoPokemon() {
-	    this.listaPokemons = new ArrayList<>();
 
 	    listaPokemons.add(new Pokemon("Mewtwo", "Psiquico", 212, 110, null, true));
 	    listaPokemons.add(new Pokemon("Lugia", "Psiquico", 212, 90, null, true));
@@ -112,9 +112,6 @@ public class EquipoPokemon {
 	    listaPokemons.add(new Pokemon("Gholdengo", "Acero", 187, 60, null, true));
 	    listaPokemons.add(new Pokemon("Meowscarada", "Planta", 176, 110, null, true));
 }
-	public List<Pokemon> getListaPokemons() {
-		return listaPokemons;
-	}
 	
 	// ------------ CODIGO GENERAR EQUIPO --------------
 	
