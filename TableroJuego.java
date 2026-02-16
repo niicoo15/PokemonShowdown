@@ -32,8 +32,8 @@ import java.util.Scanner;
 		        misMovimientos.get(2).getNombre(), misMovimientos.get(2).getPotencia(), 
 		        misMovimientos.get(3).getNombre(), misMovimientos.get(3).getPotencia());
 		    System.out.println("_".repeat(65));
-		}		
-	}
+	}		
+}
 
 
 

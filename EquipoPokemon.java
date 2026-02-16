@@ -123,7 +123,6 @@ public class EquipoPokemon {
         Movimiento listaMovimientos = new Movimiento();
 
         for (int i = 0; i < 6; i++) {
-        	List<Movimiento> todosLosMovs = listaMovimientos.generarMovimientos();
         	int numero = (int) (Math.random() * listaPokemons.size());
         	Pokemon pBase = listaPokemons.get(numero);
 
@@ -132,8 +131,8 @@ public class EquipoPokemon {
                                          null, true);
 
             while (pNuevo.getMovimientos().size() < 4) {
-                int numMov = (int) (Math.random() * todosLosMovs.size());
-                Movimiento m = todosLosMovs.get(numMov);
+                int numMov = (int) (Math.random() * listaMovimientos.movs.size());
+                Movimiento m = listaMovimientos.movs.get(numMov);
                 
                 if (!pNuevo.getMovimientos().contains(m)) {
                     pNuevo.aprenderMovimiento(m);

@@ -12,7 +12,7 @@ import java.util.List;
 	    	this.nombre = nombre;
 	    	this.tipo = tipo;
 	    	this.potencia = potencia;
-	}
+	    }
 	    
 	    public String getNombre() {
 	    	return this.nombre;
@@ -26,7 +26,7 @@ import java.util.List;
 	    	return this.tipo;
 	    }
 	    
-		private List<Movimiento> movs = new ArrayList<>(); 
+		public List<Movimiento> movs = new ArrayList<>(); 
 
 			public Movimiento() {
 

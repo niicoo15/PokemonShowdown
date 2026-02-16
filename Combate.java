@@ -13,7 +13,7 @@ public class Combate {
             ObjectMapper mapper = new ObjectMapper();
             tablaTipos = mapper.readValue(new File("tipos.json"), Map.class);
         } catch (Exception e) {
-            System.out.println("Error: No se pudo leer el archivo tipos.json. Revisa que esté en la raíz del proyecto.");
+            System.out.println("Error: No se pudo leer el archivo");
         }
     }
 
@@ -31,7 +31,7 @@ public class Combate {
         if (multiplicador > 1.0) {
         	System.out.println("¡Es muy eficaz!");
         } else if (multiplicador < 1.0 && multiplicador > 0) {
-        	System.out.println("No es muy eficaz...");
+        	System.out.println("No es muy eficaz, tontito.");
         } else if (multiplicador == 0) {
         	System.out.println("No afecta a " + defensor.getNombre());
         } else {
