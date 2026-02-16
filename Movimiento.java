@@ -165,15 +165,7 @@ import java.util.List;
 
 	    }
 			
-		public List<Movimiento> generarMovimientos(){
-			List<Movimiento> movimientos = new ArrayList<>();
-				
-			for (int i = 0; i < 4; i++) {
-			int numero = (int) (Math.random() * movs.size());
-			movimientos.add(movs.get(numero));
-			}
-			return movimientos;
-		}
+		
 			
 	}	
 
